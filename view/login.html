@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://localhost/assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="http://localhost/assets/img/favicon.png">
   <title>
     Tomato Group Dashboard
   </title>
@@ -13,38 +13,42 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <!-- Nucleo Icons -->
-  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="http://localhost./assets/css/nucleo-icons.css" rel="stylesheet" />
   <!-- CSS Files -->
-  <link href="../assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <link href="http://localhost/assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <style>
+    body {
+      padding-top: 15%;
+      padding-bottom: 40px;
+    }
+
+    .form-signin {
+      max-width: 400px;
+      padding: 15px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="card">
+  <div class="card form-signin">
     <div class="card-body">
       <form>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <label for="username-input">Username</label>
+          <input type="text" class="form-control" id="username-input" name="username" placeholder="Enter username">
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label for="password-input">Password</label>
+          <input type="password" class="form-control" id="password-input" name="password" placeholder="Password">
         </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" value="">
-            Option one is this
-            <span class="form-check-sign">
-              <span class="check"></span>
-            </span>
-          </label>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+      <button id="signin" class="btn btn-primary">Sign In</button>
     </div>
   </div>
+  <!--   Core JS Files   -->
+  <script src="http://localhost/assets/js/core/jquery.min.js"></script>
+  <script src="http://localhost/js/signin.js"></script>
 </body>
 
 </html>
